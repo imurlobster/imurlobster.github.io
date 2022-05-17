@@ -234,11 +234,11 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-position-absolute与relative的区别" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-git常见命令操作整理" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2022/05/17/position-absolute%E4%B8%8Erelative%E7%9A%84%E5%8C%BA%E5%88%AB/" class="article-date">
-      <time datetime="2022-05-17T03:22:52.105Z" itemprop="datePublished">2022-05-17</time>
+      <a href="/2022/05/17/git%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86/" class="article-date">
+      <time datetime="2022-05-17T03:28:25.000Z" itemprop="datePublished">2022-05-17</time>
 </a>
     </div>
   
@@ -247,12 +247,129 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/05/17/git%E5%B8%B8%E8%A7%81%E5%91%BD%E4%BB%A4%E6%93%8D%E4%BD%9C%E6%95%B4%E7%90%86/">git常见命令操作整理</a>
+    </h1>
+  
+
+      </header>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <hr>
-<p>title: ‘position:absolute与relative的区别’<br>date: 2022-05-17 11:22:07<br>tags:<br>–</p>
-<p><strong>position为relative</strong></p>
+        <p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3f194a17653d4dfe8b423e59b59043dc~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
+<p>添加内容到暂存区</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+<p>添加暂存区的内容到本地仓库</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit -m &quot;提交信息&quot;</span><br></pre></td></tr></table></figure>
+<p>将本地仓库代码推送到远程仓库, branchName为分支名</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin branchName</span><br></pre></td></tr></table></figure>
+<p>第一次推送master分支的所有内容</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure>
+<p>此后，每次本地提交后，可以去掉-u参数进行推送 </p>
+<p>克隆仓库，repositoryUrl为仓库地址</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone repositoryUrl</span><br></pre></td></tr></table></figure>
+<p>更新本地仓库代码与远程仓库一致</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch origin branchName</span><br></pre></td></tr></table></figure>
+<p>更新本地工作区代码与远程仓库一致</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin branchName</span><br></pre></td></tr></table></figure>
+<p>创建并切换分支有两种方式，方式一</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b branchName</span><br></pre></td></tr></table></figure>
+<p>创建并切换分支方式二</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git branch branchName</span><br><span class="line">git checkout branchName</span><br></pre></td></tr></table></figure>
+<p>撤销修改</p>
+<p>此时有两种情况</p>
+<p>第一种，文件自修改后尚未添加到暂存区，此时撤销修改则回到和版本库一模一样的状态</p>
+<p>第二种，文件已经添加到暂存区，此时又做了修改。撤销修改后，回到添加到暂存区的状态</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -- fileName</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-position-absolute与relative的区别" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2022/05/17/position-absolute%E4%B8%8Erelative%E7%9A%84%E5%8C%BA%E5%88%AB/" class="article-date">
+      <time datetime="2022-05-17T03:22:07.000Z" itemprop="datePublished">2022-05-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/05/17/position-absolute%E4%B8%8Erelative%E7%9A%84%E5%8C%BA%E5%88%AB/">position:absolute与relative的区别</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p><strong>position为relative</strong></p>
 <p>对象不可层叠，不脱离文档流，依然占据文档的一部分。<br>以原自身文档位置左上角为原点进行定位。<br>通过top、bottom、left、right调整位置。</p>
 <p>如下图所示：<br><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/3b700ef0d62544feaf2d20ef66e7d2ad~tplv-k3u1fbpfcp-watermark.image" alt="image.png"></p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.box</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>: inline-block; </span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">background</span>: red;</span><br><span class="line">    <span class="attribute">color</span>: white;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-id">#two</span> &#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">top</span>: <span class="number">20px</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">background</span>: blue;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -273,127 +390,6 @@
 
 
 <p>-</p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-bak/My-new-post" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2022/05/17/bak/My-new-post/" class="article-date">
-      <time datetime="2022-05-17T03:19:39.000Z" itemprop="datePublished">2022-05-17</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/05/17/bak/My-new-post/">My new post</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-bak/hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2022/05/17/bak/hello-world/" class="article-date">
-      <time datetime="2022-05-17T02:16:08.839Z" itemprop="datePublished">2022-05-17</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/05/17/bak/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
       
